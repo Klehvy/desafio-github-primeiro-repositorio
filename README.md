@@ -9,60 +9,20 @@ Primeiro teste em HTML/CSS/JAVASCRIPT
 
 Desenvolvido site simples para teste.
 
-Codigos CSS/ JAVASCRIP
-:root {
-    --green: #00FF00;
-    --white: #ffffff;
-    --black: #000000;
-}
+Codigo JAVASCRIPT
 
-*{
-    color: var(--fontColor);
-    font-family: helvetica;
-}
+'use strict'
 
-body {
-    background: var(--bg);
-}
+const switcher = document.querySelector('.btn');
 
-ul {
-    font-family: helvetica;
-}
+switcher.addEventListener('click', function() {
+    document.body.classList.toggle('dark-theme')
 
-li {
-    list-style: circle;
-}
-
-.list {
-    list-style: square;
-}
-
-.light-theme {
-    --bg: var(--green);
-    --fontColor: var(--black);
-    --btnbg: var(--black);
-    --btnfontColor: var(--white);
-}
-
-.dark-theme {
-    --bg: var(--black);
-    --fontColor: var(--green);
-    --btnbg: var(--white);
-    --btnfontColor: var(--black);
-}
-
-.btn {
-    position: absolute;
-    top: 20px;
-    left: 250px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: none;
-    color: var(--btnfontColor);
-    background-color: var(--btnbg);
-}
-
-.btn:focus{
-    outline-style: none;
-}
+    var className = document.body.className;
+    if(className == "light-theme") {
+        this.textContent - "dark";
+    }
+    else{
+        this.textContent - "ligth";
+    }
+}); 
