@@ -7,7 +7,7 @@ Meu desafio GitHub
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 Primeiro teste em HTML/CSS/JAVASCRIPT
 
-#HTML
+HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
