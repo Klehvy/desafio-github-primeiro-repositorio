@@ -9,28 +9,60 @@ Primeiro teste em HTML/CSS/JAVASCRIPT
 
 Desenvolvido site simples para teste.
 
--<!DOCTYPE html>
--<html lang="en">
--<head>
--   <meta charset="UTF-8">
--    <meta http-equiv="X-UA-Compatible" content="IE=edge">
--   <meta name="viewport" content="width=device-width, initial-scale=1.0">
--   <title>Simple WEB site</title>
--   <link rel="stylesheet" href="main.css">
--</head>
--<body class="light-theme">
--<h1>Lista de tarefas</h1>  
--<p id="msg">Tarefas atuais</p> 
--<ul>
--   <li class="list">Adicionar estilos visuais</li>
--   <li class="list">Adicionar temas claros e escuros</li>
--    <li>Habilitar a alternancia de temas</li>
--</ul>
--<div>
--   <button class="btn">Escuro</button>
--</div>
--<script src="app.js"></script> 
--<noscript>Voce precisa habilitar JavaScript para ver este site completo.</noscript>
--</noscript>
--</body>
--</html>
+Codigos CSS/ JAVASCRIP
+:root {
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+*{
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
+}
+
+ul {
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnbg: var(--black);
+    --btnfontColor: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnbg: var(--white);
+    --btnfontColor: var(--black);
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnfontColor);
+    background-color: var(--btnbg);
+}
+
+.btn:focus{
+    outline-style: none;
+}
