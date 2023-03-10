@@ -15,6 +15,7 @@ Codigo JAVASCRIPT
 
 const switcher = document.querySelector('.btn');
 
+
 switcher.addEventListener('click', function() {
     document.body.classList.toggle('dark-theme')
 
@@ -22,6 +23,7 @@ switcher.addEventListener('click', function() {
     if(className == "light-theme") {
         this.textContent - "dark";
     }
+    
     else{
         this.textContent - "ligth";
     }
